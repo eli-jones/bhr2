@@ -1,0 +1,19 @@
+.gen-filter h5 {
+    color: var(--dblue);
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 1rem;
+}
+
+.filter button {
+    background-color: var(--green);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px;
+    transition: background-color 100ms ease-in-out;
+    color: var(--dblue);
+    cursor: pointer;
+}
+
+.filter button:hover {
+    background-color: var(--mblue);
+}

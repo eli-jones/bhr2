@@ -1,0 +1,36 @@
+.slider-inner {
+    display: flex;
+    flex-direction: row;
+}
+
+.slider-image {
+    min-width: 7rem;
+    min-height: 7rem;
+    max-width: 7rem;
+    max-height: 7rem;
+    overflow: hidden;
+    animation: swiperAnimation 40s linear infinite;
+}
+
+.slider-image img {
+    max-height: 11rem;
+    object-fit: cover;
+    margin-top: -2rem;
+}
+
+.bc-pic {
+    margin-left: -8rem;
+}
+
+.g-pic {
+    margin-left: -2rem;
+}
+
+@keyframes swiperAnimation{
+  0%{
+    transform:translateX(0)
+  }
+  100% {
+    transform:translateX(-500%)
+  }
+}

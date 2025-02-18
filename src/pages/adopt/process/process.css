@@ -1,0 +1,58 @@
+.page {
+    background-color: var(--beige);
+    display: flex;
+    justify-content: center;
+}
+
+.banner {
+    width: 55vw;
+    max-width: 50rem;
+}
+
+.process {
+    margin: 2rem 0;
+    width: 55vw;
+    max-width: 50rem;
+}
+
+.process h2 {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.process p {
+    margin-bottom: 1rem;
+}
+
+.process a {
+    text-decoration: none;
+}
+
+.process button {
+    background-color: var(--mblue);
+    color: var(--beige);
+    padding: 10px 15px;
+    border-radius: 0.15rem;
+    margin: 1rem 0;
+    transition: background-color 100ms ease-in-out;
+}
+
+.process button:hover {
+    background-color: var(--green);
+}
+
+.process button:active,
+.process button:focus {
+    background-color: var(--dblue);
+}
+
+.link-text {
+    color: var(--mblue);
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .banner, .process {
+        width: 70vw;
+    }
+}

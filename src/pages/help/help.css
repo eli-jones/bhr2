@@ -1,0 +1,164 @@
+.page-content {
+    background-color: var(--lblue);
+    overflow: hidden;
+}
+
+.row-1 {
+    background-color: var(--beige);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-2 {
+    background-color: var(--beige);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-1 p, .row-2 p {
+        margin-top: 1.5rem;
+    }
+
+.side-text {
+    width: 75vw;
+    margin: 2rem 0;
+}
+
+.volunteer {
+    
+}
+
+.donate {
+
+}
+
+.photo {
+    width: 98vw;
+    height: 25rem;
+    overflow: hidden; 
+}
+
+.side-photo {
+    margin-top: -6rem;
+    width: 100%;
+}
+
+.side-text button {
+    background-color: var(--mblue);
+    color: var(--beige);
+    padding: 10px 15px;
+    border-radius: 0.15rem;
+    margin-top: 1.5rem;
+    transition: background-color 100ms ease-in-out;
+}
+
+.side-text button:hover {
+    background-color: var(--green);
+}
+
+.side-text button:active,
+.side-text button:focus {
+    background-color: var(--dblue);
+}
+
+.volunteer-button {
+    width: 7rem;
+}
+
+.volunteer a {
+    text-decoration: none;
+}
+
+.donate-button {
+    width: 2rem;
+}
+
+@media only screen and (min-width: 750px) and (max-width: 899px) {
+    .page-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .side-text {
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .volunteer {
+        margin: 0 2rem;
+        min-width: 15rem;
+    }
+    .donate {
+        margin: 0 2rem;
+        min-width: 15rem;
+    }
+    .photo {
+        width: 50vw;
+        max-width: 40rem;
+        height: 100%;
+        overflow: hidden; 
+    }
+    .row-1 {
+        max-width: 80rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .row-2 {
+        max-width: 80rem;
+        display: flex;
+        flex-direction: row-reverse;
+        margin: -0.25rem 0;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .page-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .side-text {
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .volunteer {
+        margin: 0 2rem;
+        max-width: 40rem;
+    }
+    .donate {
+        margin: 0 2rem;
+        max-width: 40rem;
+    }
+    .photo {
+        width: 50vw;
+        max-width: 40rem;
+        height: 100%;
+        overflow: hidden; 
+    }
+    .row-1 {
+        max-width: 80rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .row-2 {
+        max-width: 80rem;
+        display: flex;
+        flex-direction: row-reverse;
+        margin: -0.25rem 0;
+    }
+}

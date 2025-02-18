@@ -1,0 +1,64 @@
+.pets-page {
+    background-color: var(--lblue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pets-cont {
+    width: 80vw;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-cont {
+    margin-top: 2rem;
+    width: 85vw;
+}
+
+.filter-cont {
+    background-color: white;
+    width: 80vw;
+    max-height: 25rem;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.card-slots a {
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .pets-cont {
+        max-width: 80rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .card-cont {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: flex-start;
+        max-width: 80rem;
+    }
+    .filter-cont {
+        width: 20vw;
+        min-width: 15rem;
+        max-width: 20rem;
+        padding: 1rem;
+        margin: 0;
+    }
+    .card-slots {
+        margin-left: 2rem;
+        width: 60vw;
+        max-width: 60rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

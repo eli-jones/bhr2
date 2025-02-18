@@ -1,0 +1,149 @@
+.details-page {
+    background-color: var(--lblue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-content {
+    margin: 2rem 0 ;
+    border-radius: 5px;
+    padding: 2rem;
+    width: 80vw;
+    background-color: var(--beige);
+}
+
+.details-content img {
+    width: auto;
+    height: 100%;
+}
+
+.pet-swiper {
+    background-color: white;
+    border-radius: 5px;
+    height: 20rem;
+}
+
+.swiper-slide {
+    text-align: center;
+}
+
+.details-page button {
+    display: block;
+    background-color: var(--mblue);
+    color: var(--beige);
+    padding: 10px 15px;
+    border-radius: 0.15rem;
+    margin: 2rem 0;
+    transition: background-color 100ms ease-in-out;
+}
+
+.details-page a {
+    text-decoration: none;
+}
+
+.details-page button:hover {
+    background-color: var(--green);
+}
+
+.details-page button:active,
+.details-page button:focus {
+    background-color: var(--dblue);
+}
+
+.sep {
+    margin-top: 2rem;
+}
+
+.first-desc, .sec-desc {
+    display: flex;
+    flex-direction: row;
+}
+
+.first-desc p:last-child, .sec-desc p:last-child {
+    margin-left: -0.5rem;
+}
+
+.pet-desc p {
+    margin-top: 0.75rem;
+    min-width: 13rem;
+}
+
+.pet-desc strong {
+    font-family: 'Arvo', serif;
+    margin: 0 0.5rem 0 0rem;
+}
+
+.med-true, .med-false {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.pet-med {
+    margin: 1rem 0;
+}
+
+.pet-med p {
+    text-transform: capitalize;
+    margin: 0.75rem 0 0 1rem;
+}
+
+.pet-med img {
+    width: 35px;
+}
+
+.pet-pair {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pet-pair img {
+    height: 4rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+}
+
+.pet-pair a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.pet-pair a:hover {
+    font-style: italic;
+}
+
+.pet-pers strong {
+    font-family: 'Arvo', serif;
+    margin-right: 1rem;
+}
+
+.pet-bio {
+    margin: 1rem 0;
+    width: 98%;
+}
+
+.pet-temp h5 {
+    color: var(--dblue);
+}
+
+.pet-temp p {
+    margin-top: 1em;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .pet-desc .second {
+        margin: 0 0.5rem 0 3rem;
+    }
+    .first-desc p:last-child, .sec-desc p:last-child {
+        margin-left: 2rem;
+    }
+    .details-content {
+        max-width: 60rem;
+    }
+}

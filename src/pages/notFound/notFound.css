@@ -1,0 +1,62 @@
+.no-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--beige);
+    padding: 2rem 0;
+}
+
+.no-page-text {
+    margin: 2rem 0;
+    width: 75vw;
+    max-width: 30rem;
+}
+
+.no-page-text h3 {
+    line-height: 3rem;
+    font-size: 2.5rem;
+}
+
+.no-page-text p {
+    margin-top: 1.5rem;
+}
+
+.no-page img {
+    width: 22rem;
+}
+
+.no-page-text span {
+    cursor: pointer;
+}
+
+.source {
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+@media only screen and (min-width: 500px) {
+    .no-page {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 74.5vh;
+    }
+
+    .no-page-text {
+        margin-left: 2rem;
+        width: 30vw;
+        max-width: 30rem;
+    }
+
+    .no-page-text h3 {
+        line-height: 3rem;
+        font-size: 2.5rem;
+    }
+
+    .no-page img {
+        width: 20rem;
+    }
+
+}
