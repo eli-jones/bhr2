@@ -11,15 +11,10 @@ import React, { useState } from 'react';
 
 const Pets = () => {
     
-    const sizeCategories = ['All', ...new Set(petData.map(data => data.size))];
-    const ageCategories = ['All', ...new Set(petData.map(data => data.age))];
-    const sexCategories = ['All', ...new Set(petData.map(data => data.gender))];
-     
+    const sizeCategories = ['All', ...new Set(petData.map(data => data.size))];     
     
     const [filterItem, setFilterItem] = useState(petData);
     const [sizeButton, setSizeButton] = useState(sizeCategories);
-    const [ageButton, setAgeButton] = useState(ageCategories);
-    const [sexButton, setSexButton] = useState(sexCategories);
     
     const handleSizeFilter = (sizeButton) => {
         
