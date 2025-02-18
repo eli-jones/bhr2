@@ -16,9 +16,9 @@ const Pets = () => {
     const sexCategories = ['All', ...new Set(petData.map(data => data.gender))];
     
     const [filterItem, setFilterItem] = useState(petData);
-    const [sizeButton, setSizeButton] = useState(sizeCategories);
+    const [sizeButton] = useState(sizeCategories);
     const [ageButton] = useState(ageCategories);
-    const [sexButton, setSexButton] = useState(sexCategories);
+    const [sexButton] = useState(sexCategories);
     
     const handleSizeFilter = (sizeButton) => {
         
